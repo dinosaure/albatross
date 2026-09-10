@@ -3,6 +3,7 @@ Description=Albatross stats socket
 PartOf=albatross_stats.service
 
 [Socket]
+RuntimeDirectory=albatross/util
 ListenStream=%t/albatross/util/stat.sock
 SocketUser=albatross
 SocketMode=0660

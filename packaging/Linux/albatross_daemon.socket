@@ -3,6 +3,7 @@ Description=Albatross daemon socket
 PartOf=albatross_daemon.service
 
 [Socket]
+RuntimeDirectory=albatross/util
 ListenStream=%t/albatross/util/vmmd.sock
 SocketGroup=albatross
 SocketMode=0660
